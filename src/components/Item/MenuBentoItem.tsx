@@ -1,15 +1,15 @@
 import { ArrowRight } from "lucide-react";
 type MenuBentoItemProps = {
-  id: string;
+  key: string;
   number: string;
   image: string;
   title: string;
   description: string;
 };
 
-export const MenuBentoItem = ({ id, number, image, title, description }: MenuBentoItemProps) => {
+export const MenuBentoItem = ({ key, number, image, title, description }: MenuBentoItemProps) => {
   return (
-    <div className="flex min-h-[800px] items-center relative laptop:flex-row flex-col" key={id}>
+    <div className="flex min-h-[800px] items-center relative laptop:flex-row flex-col" key={key}>
       <span className="bg-primary laptop:w-[65%] w-[100%] -left-20 absolute h-[70%] -z-10 rounded-xl" />
       <div className="laptop:w-1/2 w-full">
         <img src={image} alt={title} />

@@ -8,9 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        laptop: "1366px",
+        desktop: "1920px",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#FFE8D4",
+        secondary: "#FF7F0F",
       },
     },
   },

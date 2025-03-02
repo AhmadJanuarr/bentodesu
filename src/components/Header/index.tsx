@@ -6,14 +6,9 @@ import { useState } from "react";
 
 type NavLinksProps = {
   navItem: string;
-  key: number;
 };
-const NavLinks = ({ navItem, key }: NavLinksProps) => {
-  return (
-    <li className="text-gray-700" key={key}>
-      {navItem}
-    </li>
-  );
+const NavLinks = ({ navItem }: NavLinksProps) => {
+  return <li className="text-gray-700">{navItem}</li>;
 };
 
 export const Header = () => {

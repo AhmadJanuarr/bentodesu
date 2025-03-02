@@ -10,9 +10,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body className={`antialiased relative`}>
+      <body className={`antialiased`}>
         <Header />
-        <main className="dekstop:w-[80%] laptop:w-[90%] w-full mx-auto px-5 relaitve">{children}</main>
+        <main className="w-full mx-auto laptop:px-20 desktop:px-32 overflow-x-hidden">{children}</main>
         <Footer />
       </body>
     </html>

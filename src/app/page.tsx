@@ -30,7 +30,7 @@ export default function Home() {
         <img
           src="/elements/element5.png"
           alt="element-background"
-          className="w-full absolute -z-10 top-0 laptop:max-h-[15%] min-h-[9%]"
+          className="w-full absolute -z-10 top-0 laptop:h-[120%] min-h-[100%]"
         />
         <section className="flex justify-center flex-col items-center py-10 laptop:py-20 desktop:py-32">
           <h1 className="laptop:text-[4rem] desktop:text-[4.5rem] font-bold text-center text-[2em]">
@@ -82,12 +82,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="justify-center flex relative laptop:flex-row flex-col-reverse items-center w-full">
+        <section className="justify-center flex relative laptop:flex-row flex-col-reverse items-center w-full ">
           <div className="laptop:w-1/2 flex flex-col justify-center gap-10 items-center laptop:items-start">
             <img
               src="/elements/element3.png"
               alt="element3"
-              className="absolute -z-10 laptop:w-1/3 laptop:-left-20 laptop:button-none  bottom-20"
+              className="absolute -z-10 laptop:w-1/3 laptop:-left-20 laptop:button-none bottom-20"
             />
             <h1 className="text-[2rem]">
               <span className="text-secondary">Lebih dari Sekadar Makanan</span> – Perjalanan Rasa dari Jepang
@@ -119,7 +119,7 @@ export default function Home() {
           />
         </section>
 
-        <section className="justify-center flex flex-col  py-24 laptop:py-32 h-auto gap-5 w-full">
+        <section className="justify-center flex flex-col py-24 laptop:py-32 h-auto gap-5 w-full">
           {MENU_BENTO.map((item, index) => (
             <MenuBentoItem
               key={item.number || index}
@@ -134,7 +134,7 @@ export default function Home() {
         <TestimonialSection />
 
         <section
-          className="justify-center flex flex-col  py-32 min-h-screen w-screen  items-center overflow-hidden relative "
+          className="justify-center flex flex-col py-32 min-h-screen  items-center relative w-screen overflow-hidden"
           style={{ backgroundColor: "#FFE8D4" }}
         >
           <div className="desktop:w-[70%] flex flex-col gap-5 justify-center items-center text-center z-10 ">
